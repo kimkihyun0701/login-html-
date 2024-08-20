@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악 테스트 시작</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="test-form">
+        <div class="test-title">음악 테스트</div>
+        
+        <!-- 성별 선택 필드 -->
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="">선택하세요</option>
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+            <option value="other">기타</option>
+        </select>
+        <div id="gender-error" class="error-message">성별을 선택해주세요.</div>
+
+        <!-- 나이 입력 필드 -->
+        <label for="age">나이</label>
+        <input type="text" id="age" placeholder="나이를 입력하세요">
+        <div id="age-error" class="error-message">올바르지 않은 나이입니다.</div>
+        
+        <!-- 테스트 시작 버튼 -->
+        <button type="submit">테스트 시작</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
